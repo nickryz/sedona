@@ -1,0 +1,24 @@
+.desktop-wrap {
+	position: relative;
+}
+	.desktop-title {
+		@include titleText;
+		@include positionCenter;
+		transform: translate(-50%,-50%);
+		top: 33%;
+		color: $titleLight;
+		font-size: 7rem;
+
+
+	}
+
+	.desktop__img {
+		width: 100%;
+	}
+
+	.desktop__triangle {
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		transform: translateY(-100%);
+	}
