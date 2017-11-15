@@ -2,7 +2,67 @@
 	@include container;
 	position: relative;
 }
-	.header {
+	.main-nav {
+		background: rgba(255, 255, 255, 1.0);
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+	}
+		.main-nav__list {
+			display: flex;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+			.main-nav__item {
+				width: 20%;
+				text-align: center;
+				position: relative;
+			}
+
+				.main-nav__link {
+					@include titleText;
+					text-decoration: none;
+					font-size: 0.875rem;
+					display: block;
+					padding: 20px 0;
+					transition: color 0.2s ease-in;
+					&--logo {
+						@include positionCenter;
+						padding: 0;
+						background: url('../img/logotype-desktop.png');
+						width: 188px;
+						height: 96px;
+						@media screen and (max-width: 1210px) {
+							width: 102px;
+							height: 83px;
+							background: url('../img/logotype-tablet.png');
+						}
+						@media screen and (max-width: 768px) {
+							width: 102px;
+							height: 83px;
+							background: url('../img/logotype-mobile.png');
+						}
+					}
+					&:hover {
+						color: $mMenuHVR;
+					}
+					&:active {
+						color: $mMenuDWN;
+					}
+					&--active {
+						color: $mMenuActive;
+						cursor: default;
+						&:hover {
+							color: $mMenuActiveHVR;
+						}
+						&:active {
+							color: $mMenuActiveHVRDWN;
+						}
+					}
+				}
+
+	.desktop-wrap {
 		background: url(../img/back-desktop--foto.jpg) center center no-repeat;
 	    background-size: cover;
 	    height: 357px;
@@ -26,40 +86,3 @@
 	    	@include positionCenter;
 	    }
 	}
-		.main-nav {
-			background: rgba(255, 255, 255, 1.0);
-		}
-			.main-nav__list {
-				display: flex;
-				list-style: none;
-				padding: 0;
-				margin: 0;
-			}
-				.main-nav__item {
-					width: 20%;
-					text-align: center;
-					position: relative;
-				}
-
-					.main-nav__link {
-						@include titleText;
-						text-decoration: none;
-						font-size: 0.875rem;
-						display: block;
-						padding: 20px 0;
-						transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
-						&--logo {
-							padding: 0;
-						}
-						&:hover {
-							box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-							color: $text;
-						}
-					}
-
-						.logotype {
-							@include positionCenter;
-							width: 188px;
-						}
-
-	

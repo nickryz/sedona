@@ -4,15 +4,15 @@
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 
 	@media screen and (max-width: 1210px) {
-		width: 970px;
+		width: 100%;
 	}
 	
 	@media screen and (max-width: 992px) {
-		width: 750px;
+		/* width: 750px; */
 	}
 
 	@media screen and (max-width: 768px) {
-		width: auto;
+		/* width: auto; */
 	}
 }
 
@@ -31,8 +31,16 @@
 @mixin titleText {
 	font-family: $mainFont;
 	color: $titleDark;
-	font-size: 1.313rem;
+	font-size: 1.875rem;
 	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@mixin secondText {
+	font-family: $mainFont;
+	color: $text;
+	font-size: 0.875rem;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 
