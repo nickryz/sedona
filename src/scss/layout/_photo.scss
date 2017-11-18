@@ -44,16 +44,32 @@
 		font-size: 0;
 		padding: 0;
 		margin: 0;
+		@media screen and (max-width: 1210px) {
+			max-width: 648px;
+			margin: 0 auto;
+		}
+		@media screen and (max-width: 768px) {
+			max-width: 280px;
+			margin: 0 auto;
+		}
 	}
 		.photos__item {
 			width: calc(100%/3);
 			position: relative;
+			@media screen and (max-width: 1210px) {
+				width: 50%;
+			}
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
 			&--big {
 				width: 100%;
 			}
 		}
 
 			.photos__link {
+				height: 100%;
+				width: 100%;
 			}
 
 				.photo {
@@ -68,6 +84,14 @@
 				background: rgba(0,0,0,.3);
 				width: 100%;
 				padding: 20px;
+				@media screen and (max-width: 1210px) {
+					position: relative;
+					background: rgba(0,0,0,.3);
+				}
+				@media screen and (max-width: 768px) {
+					flex-direction: column;
+					align-items: flex-start;
+				}
 			}
 				
 				.photos__title {
