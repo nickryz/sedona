@@ -1,11 +1,16 @@
-.gallery-section {
+.section {
 	background: #fff;
-	padding: 110px 0 70px 0;
-	@media screen and (max-width: 1210px) {
-		padding: 70px 0 70px 0;
+	&--photo {
+		padding: 110px 0 35px 0;
+		@media screen and (max-width: 1210px) {
+			padding: 70px 0 35px 0;
+		}
+		@media screen and (max-width: 768px) {
+			padding: 40px 0 35px 0;
+		}
 	}
-	@media screen and (max-width: 768px) {
-		padding: 40px 0 70px 0;
+	&--video {
+		padding: 35px 0 35px 0;
 	}
 
 }
