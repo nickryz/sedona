@@ -10,6 +10,15 @@
 		@media screen and (max-width: 768px) {
 			padding: 40px 6% 25px 6%;
 		}
+		&--second {
+			padding: 70px 29% 70px 29%;
+			@media screen and (max-width: 1210px) {
+				padding: 70px 23% 25px 23%;
+			}
+			@media screen and (max-width: 768px) {
+				padding: 40px 6% 25px 6%;
+			}
+		}
 	}
 
 		.discr__tittle {
