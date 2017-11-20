@@ -1,0 +1,19 @@
+.text__input {
+    order: 1;
+    flex-grow: 1;
+    line-height: 58px;
+    border: none;
+    padding: 0 0 0 20px;
+    background: $staticForm;
+    @include titleText;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    @include placeholder {
+        color: $titleDark;
+    }
+}
+.text__title {
+    @include secondText;
+    padding-right: 20px;
+    line-height: 58px;
+}

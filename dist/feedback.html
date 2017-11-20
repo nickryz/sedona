@@ -51,9 +51,45 @@
 
 		<main class="maincontent">
             <div class="discr-wrap">
-                <h2 class="discr__tittle">Фото и видео</h2>
-                <p class="discr__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-            </div>
+                <h2 class="discr__tittle">Оставьте свой отзыв</h2>
+                <p class="discr__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+			</div>
+			<form action="#" class="feedback">
+				<fieldset class="feedback__section feedback__section--50">
+					<legent class="feedback__section-title">ваше общее впечатление:</legent>
+					<div class="radio-set__list">
+						<div class="radio-set__item">
+							<input type="radio" name="rate" id="radio1" class="radio-set__input">
+							<label for="radio1" class="radio-set__title">Скорее положительное</label>
+						</div>
+						<div class="radio-set__item">
+							<input type="radio" name="rate" id="radio2" class="radio-set__input" checked>
+							<label for="radio2" class="radio-set__title">Скорее отрицательное</label>
+						</div>
+						<div class="radio-set__item">
+							<input type="radio" name="rate" id="radio3" class="radio-set__input" checked>
+							<label for="radio3" class="radio-set__title">Затрудняюсь ответить</label>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="feedback__section feedback__section--50">
+					<legent class="feedback__section-title">пердставтесь, пожалуйста:</legent>
+					<div class="text-box__list">
+						<div class="text-box__item">
+							<input type="text" name="name" id="name" placeholder="Петр" class="text__input">
+							<label for="name" class="text__title">Имя:</label>
+						</div>
+						<div class="text-box__item">
+							<input type="text" name="surname" id="surname" placeholder="Иванов" class="text__input">
+							<label for="surname" class="text__title">Фамилия:</label>
+						</div>
+						<div class="text-box__item">
+							<input type="text" name="patronymic" id="patronymic" placeholder="Александрович" class="text__input">
+							<label for="patronymic" class="text__title">Отчество:</label>
+						</div>
+					</div>
+				</fieldset>
+			</form>
 		</main>
 
 	</div>

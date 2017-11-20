@@ -1,0 +1,41 @@
+.radio-set__input {
+    display: none;
+    &:checked + .radio-set__title:before {
+        background: $FormIco;
+    }
+    &:checked + .radio-set__title:active:before {
+        background: $DWNFormIco;
+        border-color: $DWNForm;
+    }
+}
+
+.radio-set__title {
+    @include titleText;
+    font-size: 1.125rem;
+    line-height: 56px;
+    padding-left: 80px;
+    position: relative;
+    text-transform: none;
+    display: block;
+    &:before {
+        content: '';
+        position: absolute;
+        border: 17px solid $staticForm;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        left: 0;
+        background: $staticForm;
+        box-sizing: border-box;
+        transition: background 0.2s linear, border-color 0.2s linear;
+        
+    }
+    &:hover:before {
+        border-color: $hoverForm;
+        background: $hoverForm;
+    }
+    &:active:before {
+        border-color: $DWNForm;
+        background: $DWNForm;
+    }
+}
