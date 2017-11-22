@@ -1,0 +1,37 @@
+// Map + interest block
+
+.interest {
+  width: $wrapper-mobile-width;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+
+ 
+
+  
+    margin-bottom: 65px;
+  
+  &__title {
+    font: $font-title-tablet;
+    color: $color-font-title;
+    margin-bottom: 22px; 
+
+    
+  }
+
+  &__text {
+    font: normal 14px/24px $font-family;
+    margin-bottom: 34px; 
+  }
+    
+
+    
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 35px; 
+}

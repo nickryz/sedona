@@ -3,8 +3,16 @@
 @import "misc/_mixin.scss";
 @import "misc/_defolt.scss";
 @import "misc/_vars.scss";
+@import "misc/_variables.scss";
+@import "misc/_mixins.scss";
 
+
+@import "layout/_btn.scss";
+@import "layout/_general.scss";
 @import "layout/_header.scss";
+@import "layout/_intro.scss";
+@import "layout/_reasons-block.scss";
+@import "layout/_interest-map.scss";
 @import "layout/_photo.scss";
 @import "layout/_feedback.scss";
 @import "layout/_footer.scss";
