@@ -1,0 +1,65 @@
+.page-footer {
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+
+ @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+ &__social {
+    display: flex;
+    justify-content: space-between;
+
+   
+
+   a {
+      position: relative;
+      display: block;
+      width: 46px;
+      height: 48px;
+      background: $blue;
+      transition: all, 0.5s, ease;
+      margin-right: 6px;
+
+     &:hover {
+        background: $blue-hover;
+      }
+
+     &:active {
+        background: $blue-active;
+
+       svg {
+          fill-opacity: 0.3;
+        }
+      }
+
+     svg {
+        position: absolute;
+      }
+      
+   }
+
+   &--twitter {
+      top: 16px;
+      left: 15px;
+    }
+
+   &--facebook {
+      top: 14px;
+      left: 20px;
+    }
+
+   &--youtube {
+      top: 15px;
+      left: 13px;
+    }
+  }
+
+ 
+ 
+}

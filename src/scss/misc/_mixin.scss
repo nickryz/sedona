@@ -12,7 +12,7 @@
 	}
 
 	@media screen and (max-width: 768px) {
-		/* width: auto; */
+		position: absolute;
 	}
 }
 
@@ -55,4 +55,11 @@
 	&:-moz-placeholder           { @content; }
 	&::-moz-placeholder          { @content; }
 	&:-ms-input-placeholder      { @content; }
+}
+
+@mixin svgColor ($color) {
+	& path {
+		fill: $color;
+		transition: fill 0.1s ease-in;
+	}
 }
